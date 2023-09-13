@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    
+    <h1>Hello I am Responsive Navbar</h1>
+    
+  
+    <nav id ="nav" >
+        <i class="fa-solid fa-bars" id="btn"></i>
+        <i class="fa-solid fa-xmark" id="btn2"></i>
+        <ul id ="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+        </ul>
+    </nav>
+    <script>
+        var btn = document.getElementById("btn");
+        var btn2 = document.getElementById("btn2");
+        var nav = document.getElementById("nav");
+        var list = document.getElementById("list");
+        btn.addEventListener("click", ()=>{
+            list.style.display = "flex"
+            btn.style.display = "none"
+            btn2.style.display="block"  
+            nav.classList.toggle("cng") 
+          
+            
+        })
+        btn2.addEventListener("click",()=>{
+            btn2.style.display = ("none")
+            btn.style.display = "block"
+            list.style.display=("none")
+            nav.classList.toggle("cng")
+            nav.classList.toggle("cng2")
+           
+        })
+    </script>
+</body>
+</html>
